@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Darwin | Web Designer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</script>
+
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -35,55 +39,68 @@
   </section>
 
   <!-- Portfolio -->
-  <section id="portfolio" class="bg-gray-100 py-20 px-6">
-    <h3 class="text-4xl font-extrabold text-center mb-16 text-gray-800">My Projects</h3>
+   <section id="portfolio" class="bg-gray-100 py-20 px-6">
+  <h3 class="text-4xl font-extrabold text-center mb-16 text-gray-800">My Projects</h3>
+  
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
     
-    <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-      
-      <!-- Project Card 1 -->
-      <div class="group bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
-        <div class="overflow-hidden relative">
-          <img src="images/project1.webp" alt="SPIRITECHOTV" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="https://spiritechotv.com/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">View Live</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition">SPIRITECHOTV</h4>
-          <p class="text-gray-600 mt-2">Apple Plus inspired website.</p>
-        </div>
-      </div>
-
-      <!-- Project Card 2 -->
-      <div class="group bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
-        <div class="overflow-hidden relative">
-          <img src="images/project2.webp" alt="KLCIS STREAM" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="https://stream.klcis.cc/index" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">View Live</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition">KLCIS STREAM</h4>
-          <p class="text-gray-600 mt-2">Streaming app clone design.</p>
-        </div>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="group bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
-        <div class="overflow-hidden relative">
-          <img src="images/project3.webp" alt="MOVEMENT360" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
-          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-            <a href="https://movement360.tv/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">View Live</a>
-          </div>
-        </div>
-        <div class="p-6">
-          <h4 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition">MOVEMENT360</h4>
-          <p class="text-gray-600 mt-2">HULU inspired website.</p>
-        </div>
-      </div>
-
+<!-- Project Card 1 -->
+<div class="group bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
+  <div class="overflow-hidden relative">
+    <picture>
+      <source srcset="./images/1.webp" type="image/webp">
+      <source srcset="./images/1.png" type="image/png">
+      <img src="./images/1.png" alt="SPIRITECHOTV" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </picture>
+    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+      <a href="https://spiritechotv.com/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">View Live</a>
     </div>
+  </div>
+  <div class="p-6">
+    <h4 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition">SPIRITECHOTV</h4>
+    <p class="text-gray-600 mt-2">Apple Plus inspired website.</p>
+  </div>
+</div>
+
+<!-- Project Card 2 -->
+<div class="group bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
+  <div class="overflow-hidden relative">
+    <picture>
+      <source srcset="./images/2.webp" type="image/webp">
+      <source srcset="./images/2.png" type="image/png">
+      <img src="./images/2.png" alt="KLCIS STREAM" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </picture>
+    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+      <a href="https://stream.klcis.cc/index" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">View Live</a>
+    </div>
+  </div>
+  <div class="p-6">
+    <h4 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition">KLCIS STREAM</h4>
+    <p class="text-gray-600 mt-2">Streaming app clone design.</p>
+  </div>
+</div>
+
+<!-- Project Card 3 -->
+<div class="group bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
+  <div class="overflow-hidden relative">
+    <picture>
+      <source srcset="./images/3.webp" type="image/webp">
+      <source srcset="./images/3.png" type="image/png">
+      <img src="./images/3.png" alt="MOVEMENT360" class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </picture>
+    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+      <a href="https://movement360.tv/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">View Live</a>
+    </div>
+  </div>
+  <div class="p-6">
+    <h4 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition">MOVEMENT360</h4>
+    <p class="text-gray-600 mt-2">HULU inspired website.</p>
+  </div>
+</div>
+
+    </div> 
   </section>
+
 
   <!-- Services -->
   <section id="services" class="max-w-5xl mx-auto py-20 px-6">
